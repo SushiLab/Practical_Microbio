@@ -4,12 +4,12 @@ L. Paoli
 2019-03-07
 
 -   [Introduction : R Basics](#introduction-r-basics)
--   [1. Suggested scripting for the report](#suggested-scripting-for-the-report)
--   [2. More advanced version of the analysis](#more-advanced-version-of-the-analysis)
+-   [Suggested scripting for the report](#suggested-scripting-for-the-report)
+-   [More advanced version of the analysis](#more-advanced-version-of-the-analysis)
 
 This document presents different options to analyse the data from the beta-galactosidase assays conducted during the Microbiology Practicals (Exp. 6.6).
 
-A first part describes the code suggested in the practical to perform the analysis, a second part explores more complex analyses and visualisations. This can, but does not have to, be used for writing the report.
+After a quick introduction, a first part describes the code suggested in the practical to perform the analysis, a second part explores more complex analyses and visualisations. This can, but does not have to, be used for writing the report.
 
 Introduction : R Basics
 -----------------------
@@ -59,8 +59,8 @@ sum(vect)
 
 Whenever you are note sure of what a function does, you can look at its documentation : `help(sum)`
 
-1. Suggested scripting for the report
--------------------------------------
+Suggested scripting for the report
+----------------------------------
 
 ### Loading data
 
@@ -148,8 +148,8 @@ Note that there is an additional column to show which group the measurement came
 4.  Do the same reactions from different groups agree with each other or is there a strong ‘batch effect’?
 5.  If you can combine the data from some or all of the different groups, which pairs of reactions now show significant difference from each other?
 
-2. More advanced version of the analysis
-----------------------------------------
+More advanced version of the analysis
+-------------------------------------
 
 ### Loading and processing data
 
@@ -170,14 +170,12 @@ getwd()
 list.files()
 ```
 
-    ## [1] "betagal_analysis_files"                  
-    ## [2] "betagal_analysis.md"                     
-    ## [3] "betagal_analysis.Rmd"                    
-    ## [4] "FS_experiment_6_6_OD summary round1.tsv" 
-    ## [5] "FS_experiment_6_6_OD summary round1.xlsx"
-    ## [6] "Practical_Microbio.Rproj"                
-    ## [7] "README_files"                            
-    ## [8] "README.Rmd"
+    ## [1] "FS_experiment_6_6_OD summary round1.tsv" 
+    ## [2] "FS_experiment_6_6_OD summary round1.xlsx"
+    ## [3] "Practical_Microbio.Rproj"                
+    ## [4] "README_files"                            
+    ## [5] "README.md"                               
+    ## [6] "README.Rmd"
 
 ``` r
 # If you need to change your directory, use 'setwd('/where/you/need/to/go/')'
