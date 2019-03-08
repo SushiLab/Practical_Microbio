@@ -3,7 +3,7 @@ title: "Microbiology Practical: analysis of ß-galactosidase assays"
 author: L. Paoli
 date: 2019-03-07
 output:
-  html_document:
+  github_document:
     toc: true
     toc_depth: 2
 ---
@@ -248,7 +248,7 @@ betagal_results = mutate(betagal_results,
                          Condition = rep(c('R1', 'R2', 'R3', 'R4'), each = 29))
 post_hoc_res = 
   TukeyHSD(aov(data = betagal_results, Activity ~ biological_replicate*Condition),
-         'biological_replicate:Condition', conf.level = .95)
+           'biological_replicate:Condition', conf.level = .95)
 post_hoc_df = as_tibble(post_hoc_res$`biological_replicate:Condition`,
                         rownames = 'Comparison')
 filter(post_hoc_df, `p adj` <= 0.05)
