@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 This document presents different options to analyse the data from the beta-galactosidase 
 assays conducted during the Microbiology Practicals (Exp. 6.6).
 
-A first part describes the code suggested in the practical to perform the analysis, a 
-second part explores more complex analyses and visualisations. This can, but does not have
-to, be used for writing the report.
+After a quick introduction, a first part describes the code suggested in the practical to 
+perform the analysis, a second part explores more complex analyses and visualisations. 
+This can, but does not have to, be used for writing the report.
 
 ## Introduction : R Basics
 
@@ -51,7 +51,7 @@ sum(vect)
 Whenever you are note sure of what a function does, you can look at its documentation :
 ```help(sum)```
 
-## 1. Suggested scripting for the report
+## Suggested scripting for the report
 
 ### Loading data
 
@@ -113,7 +113,7 @@ Note that there is an additional column to show which group the measurement came
 5. If you can combine the data from some or all of the different groups, which pairs of 
 reactions now show significant difference from each other?
 
-## 2. More advanced version of the analysis
+## More advanced version of the analysis
 
 ### Loading and processing data
 
